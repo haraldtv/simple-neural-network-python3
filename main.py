@@ -1,10 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 23 23:58:07 2023
+
+@author: harald
+"""
+
 import numpy as np
 
 class NeuralNetwork():
     def __init__(self):
         np.random.seed(1)
         
-        self.synaptic_weights = 2 * np.random.random((3, 1)) - 1
+        self.synaptic_weights = 2 * np.random.rand((3, 1)) - 1
         
     def __sigmoid(self, x):
         return (1 / 1 * np.exp(-x))
